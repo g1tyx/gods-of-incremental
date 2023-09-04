@@ -446,12 +446,12 @@
             onClick() {
                 player.timelayer = new Decimal(1)
                     // Particle effect
-                alert("You have found the fifth layer.")
-                alert("The fourth dimension.")
-                alert("On the third row.")
-                alert("On the second orbiting layer.")
-                alert("On your first time crafting.")
-                alert("Numbers are truly beautiful, aren't they?")
+                alert("你已经找到第五层了.")
+                alert("第四维度.")
+                alert("在第三排.")
+                alert("在第二轨道层.")
+                alert("当你第一次制作时.")
+                alert("数字确实很美丽，不是吗?")
                 createParticles();
                 createParticles();
                 createParticles();
@@ -513,11 +513,11 @@
             onClick() {
                 player.spacelayer = new Decimal(1)
                     // Particle effect
-                alert("You have found the sixth layer.")
-                alert("Space. The most important law of reality.")
-                alert("Can contain matter, energy, everything.")
-                alert("22 layers left. You are more than a fifth done.")
-                alert("I can feel it; we are almost free.")
+                alert("你已经找到第六层了.")
+                alert("空间。 最重要的现实法则.")
+                alert("可以容纳物质、能量、一切.")
+                alert("还剩22层。 您已经完成了超过五分之一.")
+                alert("我能感觉到； 我们几乎自由了.")
                 createParticles();
                 createParticles();
                 createParticles();

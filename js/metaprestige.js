@@ -232,19 +232,19 @@ addLayer("m", {
             currencyInternalName: "points",
             onPurchase() {
                 if (player.yhvrcutscene1.eq(0)) {
-                    alert("It's time to introduce myself.")
-                    alert("My name is Yhvr. The ranger of numbers.")
-                    alert("I am one of the four great nobles of incremental powers.")
-                    alert("You will know it's me becasue I am communicating via alerts.")
-                    alert("I am in exile, as are my other fellow nobles Jacorb and Aarex.")
-                    alert("However, I can still communicate with the outside world.")
-                    alert("My creation, galaxy.click is very useful as it lets me do this.")
-                    alert("Please. Help us get out of here!")
-                    alert("Jacorb and Aarex tried helping the other hero, but it was no use.")
-                    alert("The path of singularity was too weak to handle a single celestial.")
-                    alert("I want you to access galaxy.click, so you can be able to defeat celestials.")
-                    alert("Not even true singularities are capable of this power.")
-                    alert("Anyways, THE DEATH REALM will eventually catch on to this convo. Gotta go.")
+                    alert("是时候自我介绍一下了。")
+                    alert("我的名字是Yhvr。 数字游侠.")
+                    alert("我是增量力量四大贵族之一.")
+                    alert("你会知道是我，因为我通过警报进行交流.")
+                    alert("我被流放了，我的其他贵族同伴 Jacorb 和 Aarex 也是如此.")
+                    alert("不过我还是可以和外界沟通的.")
+                    alert("我的创作 Galaxy.click 非常有用，因为它可以让我做到这一点.")
+                    alert("拜托了。 帮助我们离开这里!")
+                    alert("Jacorb 和 Aarex 尝试帮助其他英雄，但没有用.")
+                    alert("奇点之路太弱，无法应对单个天体.")
+                    alert("希望你能访问 Galaxy.click，这样你就能打败天体.")
+                    alert("即使是真正的奇点也没有这种力量.")
+                    alert("不管怎样，死亡王国最终会抓住这个机会。 得走了.")
                 }
                 player.yhvrcutscene1 = new Decimal(1)
             },
@@ -307,11 +307,11 @@ addLayer("m", {
             effectDisplay() { return "+" + format(upgradeEffect(this.layer, this.id)) }, // Add formatting to the effect
             onPurchase() {
                 if (player.yhvrcutscene4.eq(0)) {
-                    alert("Nice.")
-                    alert("Now your incremental power gain will skyrocket.")
-                    alert("Just remember.")
-                    alert("You must keep going farther in the path, or else you won't unlock new factors.")
-                    alert("Enjoy.")
+                    alert("不错.")
+                    alert("现在您的增量力量增益将会飙升.")
+                    alert("请记住.")
+                    alert("你必须在这条路上走得更远，否则你将无法解锁新的因子.")
+                    alert("玩的开心.")
                 }
                 player.yhvrcutscene4 = new Decimal(1)
             },
@@ -348,11 +348,11 @@ addLayer("m", {
             currencyInternalName: "points",
             onPurchase() {
                 if (player.yhvrcutscene6.eq(0)) {
-                    alert("It's about time you unlocked this feature.")
-                    alert("It is run by a unique celestial, but this feature will be very helpful.")
-                    alert("You are close to the first celestial you will fight.")
-                    alert("But to summon it, you must craft a certain item.")
-                    alert("But there are requirements you will need to complete first.")
+                    alert("是时候解锁此功能了.")
+                    alert("它是由一个独特的天体运行的，但这个功能将非常有帮助.")
+                    alert("你已经接近第一个要战斗的天体了.")
+                    alert("但要召唤它，你必须制作某种物品.")
+                    alert("但您需要先完成一些要求.")
                 }
                 player.yhvrcutscene6 = new Decimal(1)
             },

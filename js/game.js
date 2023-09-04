@@ -227,7 +227,7 @@ function doReset(layer, force = false) {
 }
 
 function resetRow(row) {
-    if (prompt('Are you sure you want to reset this row? It is highly recommended that you wait until the end of your current run before doing this! Type "I WANT TO RESET THIS" to confirm') != "I WANT TO RESET THIS") return
+    if (prompt('您确定要重置该行吗？ 强烈建议您等到当前运行结束后再执行此操作! 输入 "I WANT TO RESET THIS" 以确认') != "I WANT TO RESET THIS") return
     let pre_layers = ROW_LAYERS[row - 1]
     let layers = ROW_LAYERS[row]
     let post_layers = ROW_LAYERS[row + 1]
@@ -379,13 +379,13 @@ function gameLoop(diff) {
 
 function hardReset(resetOptions) {
     alert("...")
-    alert("So this is really what you want.")
-    alert("You want to use THE ANCIENT TEMPORAL POWER OF THE VOID.")
-    alert("I know how you are feeling.")
-    alert("I felt the same before.")
-    alert("Just know that when you travel back in time,")
-    alert("All of this will have never happened.")
-    if (!confirm("So are you sure you want to reset everything???")) return
+    alert("所以这确实是你想要的.")
+    alert("你想使用虚空的远古时空力量.")
+    alert("我知道你的感受.")
+    alert("我以前也有同样的感觉.")
+    alert("只要知道当你回到过去,")
+    alert("这一切都将永远不会发生.")
+    if (!confirm("那么您确定要重置所有内容吗???")) return
     player = null
     if (resetOptions) options = null
     save(true);

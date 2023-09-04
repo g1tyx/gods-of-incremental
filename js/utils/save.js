@@ -249,7 +249,7 @@ function NaNcheck(data) {
             if (!NaNalert) {
                 clearInterval(interval);
                 NaNalert = true;
-                alert("Dang. I would never let '" + item + "' reach the evil number of NaN. I thought this day would never happen. Tell Icecreamdude about this...")
+                alert("当当。 我永远不会让 '" + item + "' 达到 NaN 的邪恶数。 我以为这一天永远不会发生。 告诉 Icecreamdude 这件事...")
                 return
             }
         } else if (data[item] instanceof Decimal) {} else if ((!!data[item]) && (data[item].constructor === Object)) {
@@ -273,10 +273,10 @@ function exportSave() {
 
 function importSave(imported = undefined, forced = false) {
     if (imported === undefined)
-        imported = prompt("Paste your save here. Don't screw up the timeline though.");
+        imported = prompt("将您的存档粘贴到此处。 但不要搞砸时间线.");
     try {
         tempPlr = Object.assign(getStartPlayer(), JSON.parse(atob(imported)));
-        if (tempPlr.versionType != modInfo.id && !forced && !confirm("This save does not seem compatible with this multiverse. Try it where it belongs.")) // Wrong save (use "Forced" to force it to accept.)
+        if (tempPlr.versionType != modInfo.id && !forced && !confirm("这个存档似乎与这个多元宇宙不兼容。 在它所属的地方尝试一下.")) // Wrong save (use "Forced" to force it to accept.)
             return;
         player = tempPlr;
         player.versionType = modInfo.id;
