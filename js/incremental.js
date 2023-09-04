@@ -1038,7 +1038,7 @@
                                    player.prestigelayer = new Decimal(1)
                                        // Particle effect
                                    alert("Jacorb 和 Aarex. 你必须释放他们.")
-                                   alert("You must find all the layers.")
+                                   alert("您必须找到所有层.")
                                    alert("28 已经很多了，不过不用担心。 你会到达那里.")
                                    alert("走过很多条路，你会一一找到它们.")
                                    alert("祝你好运.")
