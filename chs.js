@@ -189,7 +189,7 @@ var cnItems = {
     "Next reset, you will energize with nothing.": "下次重置时，你将一无所有地充满活力。",
     "One of these advancements was to shorten meta-prestiges.": "这些进步之一是缩短元声望。",
     "Prestige Energy's good effect is multiplied by 8, but its downside is squared.": "声望能量的良好效果是乘以8，但它的缺点是平方。",
-    "Prestige machines scale less (x3 -> x1.5), but machine corruptions are squared.": "声望机器的规模较小（x3 -> x1.5），但机器损坏是平方的。",
+    "Prestige machines scale less (x3 -> x1.5), but machine corruptions are squared.": "声望机器的比例减少（x3 -> x1.5），但机器腐败是平方的。",
     "The path of singularity.": "独特之路。",
     "The path your predecessor took. They made it through countless efforts.": "你的前任所走的路。 他们通过无数的努力才做到了这一点。",
     "This one celestial you will find at the end of this path is weak.": "你会发现这条路的尽头的这个天体很弱。",
