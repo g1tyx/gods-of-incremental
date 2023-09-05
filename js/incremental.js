@@ -656,7 +656,7 @@
                            //ENHANCE PATH
                            let enhanceloss = new Decimal(0)
                            if (player.i.enhancedprestigepoints.gt(0)) enhanceloss = player.i.enhancedprestigepoints.mul(0.1)
-                           if (player.i.enhancedprestigepoints.lt(0)) enhanceloss = new Decimal(0)
+                           if (player.i.enhancedprestigepoints.lt(0.00001)) enhanceloss = new Decimal(0)
 
                            player.i.enhancepoints = player.i.enhancepoints.add(player.i.enhancepointspersecond.mul(delta))
                            player.i.enhancepointseffect = player.i.enhancepoints.pow(0.5).add(1)
@@ -1401,11 +1401,11 @@
                                onClick() {
                                    player.supergeneratorlayer = new Decimal(1)
                                        // Particle effect
-                                   alert("所以，你现在已经完成了声望树的 25%!")
-                                   alert("看吧，时间确实过得很快.")
-                                   alert("再来 75%，你就完成了，你可以解放我们所有人.")
-                                   alert("嗯，这一层就像是最被遗忘的.")
-                                   alert("不管怎样。 至少不像超级助推器、超级声望、生命精华之类的.")
+                                       alert("所以，你现在已经完成了声望树的 25%!")
+                                       alert("看吧，时间确实过得很快.")
+                                       alert("再来 75%，你就完成了，你可以解放我们所有人.")
+                                       alert("嗯，这一层就像是最被遗忘的.")
+                                       alert("不管怎样。 至少不像超级助推器、超级声望、生命精华之类的.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1540,11 +1540,11 @@
                                onClick() {
                                    player.quirklayer = new Decimal(1)
                                        // Particle effect
-                                   alert("啊，是的。 声望树第四行.")
-                                   alert("这就是事情开始变得更黑暗的地方.")
-                                   alert("看起来天体正在让你做它的工作。 经典动作.")
-                                   alert("似乎也知道战斗的事情。 这很奇怪.")
-                                   alert("每当它谈论一些带有缩写词 M.S 的东西时，不要听它。 这是故障.")
+                                       alert("啊，是的。 声望树第四行.")
+                                       alert("这就是事情开始变得更黑暗的地方.")
+                                       alert("看起来天体正在让你做它的工作。 经典动作.")
+                                       alert("似乎也知道战斗的事情。 这很奇怪.")
+                                       alert("每当它谈论一些带有缩写词 M.S 的东西时，不要听它。 这是故障.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1663,19 +1663,19 @@
                                onClick() {
                                    player.hindrancelayer = new Decimal(1)
                                        // Particle effect
-                                   alert("现在你有 10 层了。 你已经超过了树的三分之一.")
-                                   alert("我很高兴你还活着。 你做得很棒.")
-                                   alert("Jacorb 说 嗨.")
-                                   alert("一旦你能够前往次元领域，你一定要访问我的 galaxy.")
-                                   alert("距离中心有几个宇宙，但你只能在有人的帮助下才能去那里.")
-                                   alert("galaxy.click 的质量控制。 光泽。 他们是真正令人畏惧的批评家.")
-                                   alert("如果你在没有陪同的情况下被发现，你就会被杀.")
-                                   alert("galaxy.click 就像天堂一样，但像你这样的人住在那里是没有用的.")
-                                   alert("只有那些创造了你的人和高级别的增量开发者才会留在那里.")
-                                   alert("在中心，你会见到我的一位朋友.")
-                                   alert("他的名字是恶魔。 他是一位来自死亡领域的法师。 但我们都有他的信任.")
-                                   alert("一旦你完成了声望树，他就会引导你进入这个领域.")
-                                   alert("然后我们都会自由.")
+                                       alert("现在你有 10 层了。 你已经超过了树的三分之一.")
+                                       alert("我很高兴你还活着。 你做得很棒.")
+                                       alert("Jacorb 说 嗨.")
+                                       alert("一旦你能够前往次元领域，你一定要访问我的 galaxy.")
+                                       alert("距离中心有几个宇宙，但你只能在有人的帮助下才能去那里.")
+                                       alert("galaxy.click 的质量控制。 光泽。 他们是真正令人畏惧的批评家.")
+                                       alert("如果你在没有陪同的情况下被发现，你就会被杀.")
+                                       alert("galaxy.click 就像天堂一样，但像你这样的人住在那里是没有用的.")
+                                       alert("只有那些创造了你的人和高级别的增量开发者才会留在那里.")
+                                       alert("在中心，你会见到我的一位朋友.")
+                                       alert("他的名字是恶魔。 他是一位来自死亡领域的法师。 但我们都有他的信任.")
+                                       alert("一旦你完成了声望树，他就会引导你进入这个领域.")
+                                       alert("然后我们都会自由.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1800,10 +1800,10 @@
                                onClick() {
                                    player.solaritylayer = new Decimal(1)
                                        // Particle effect
-                                   alert("太阳神，献给一位神.")
-                                   alert("它将成为许多新工艺资源的门户.")
-                                   alert("一旦您达到这一点，Sitra 会告诉您更多信息.")
-                                   alert("目前来看，不会有太大作用.")
+                                       alert("太阳神，献给一位神.")
+                                       alert("它将成为许多新工艺资源的门户.")
+                                       alert("一旦您达到这一点，Sitra 会告诉您更多信息.")
+                                       alert("目前来看，不会有太大作用.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1908,12 +1908,12 @@
                                onClick() {
                                    player.subspacelayer = new Decimal(1)
                                        // Particle effect
-                                   alert("您已获得子空间层.")
-                                   alert("它是献给Spaceon的。 增量之神之一.")
-                                   alert("它的主要目标是放大主空间层.")
-                                   alert("尽管付出了很多努力，但始终没有出现任何亚空间建筑.")
-                                   alert("你已经接近这个天体的尽头了.")
-                                   alert("我们都很高兴你没有死.")
+                                       alert("您已获得子空间层.")
+                                       alert("它是献给Spaceon的。 增量之神之一.")
+                                       alert("它的主要目标是放大主空间层.")
+                                       alert("尽管付出了很多努力，但始终没有出现任何亚空间建筑.")
+                                       alert("你已经接近这个天体的尽头了.")
+                                       alert("我们都很高兴你没有死.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -2015,11 +2015,11 @@
                                onPurchase() {
                                    if (player.i.prestigeenergy.eq(0)) {
                                        if (player.yhvrcutscene2.eq(0)) {
-                                           alert("很聪明.")
-                                           alert("你选择不产生声望能量.")
-                                           alert("你知道声望能量和腐败会引起问题.")
-                                           alert("这样做你会获得更多的增量能量.")
-                                           alert("做得好.")
+                                        alert("很聪明.")
+                                        alert("你选择不产生声望能量.")
+                                        alert("你知道声望能量和腐败会引起问题.")
+                                        alert("这样做你会获得更多的增量能量.")
+                                        alert("做得好.")
                                        }
                                        player.yhvrcutscene2 = new Decimal(1)
                                        player.i.noenergyboost = new Decimal(2)
@@ -2038,14 +2038,14 @@
                                currencyInternalName: "prestigepoints",
                                onPurchase() {
                                    if (player.yhvrcutscene3.eq(0)) {
-                                       alert("您已到达下一层.")
-                                       alert("这一层很大。 这是这条路的最后一条.")
-                                       alert("最后，你会发现自己面对的是一个天体.")
-                                       alert("别担心，这并不是真正的天体。 这是一个伪天体.")
-                                       alert("你的声望机器的力量应该能有效对抗这个天体.")
-                                       alert("你成为我们英雄的目的是重新统一多元宇宙的六个领域.")
-                                       alert("然而，这只是一小步。 你会很棒的，别担心.")
-                                       alert("只需要时间.")
+                                    alert("您已到达下一层.")
+                                    alert("这一层很大。 这是这条路的最后一条.")
+                                    alert("最后，你会发现自己面对的是一个天体.")
+                                    alert("别担心，这并不是真正的天体。 这是一个伪天体.")
+                                    alert("你的声望机器的力量应该能有效对抗这个天体.")
+                                    alert("你成为我们英雄的目的是重新统一多元宇宙的六个领域.")
+                                    alert("然而，这只是一小步。 你会很棒的，别担心.")
+                                    alert("只需要时间.")
                                    }
                                    player.yhvrcutscene3 = new Decimal(1)
                                },
@@ -2183,13 +2183,13 @@
                                currencyInternalName: "pureenergy",
                                onPurchase() {
                                    if (player.yhvrcutscene7.eq(0)) {
-                                       alert("最后。 你现在在这里。 伪天体.")
-                                       alert("它的名字是Ce308。 虽然是伪天体，但威力还是相当大的.")
-                                       alert("你不敢去死。 我们无法再承受另一次伤亡.")
-                                       alert("请记住，你随时都可能被杀死.")
-                                       alert("即使天神变坏，也要坚持你的直觉.")
-                                       alert("无论遇到什么困难，都要沿着标准路径不断前进.")
-                                       alert("祝你好运.")
+                                    alert("最后。 你现在在这里。 伪天体.")
+                                    alert("它的名字是Ce308。 虽然是伪天体，但威力还是相当大的.")
+                                    alert("你不敢去死。 我们无法再承受另一次伤亡.")
+                                    alert("请记住，你随时都可能被杀死.")
+                                    alert("即使天神变坏，也要坚持你的直觉.")
+                                    alert("无论遇到什么困难，都要沿着标准路径不断前进.")
+                                    alert("祝你好运.")
                                    }
                                    player.yhvrcutscene7 = new Decimal(1)
                                },
@@ -4618,6 +4618,157 @@
                        flashDiv.addEventListener('transitionend', () => {
                            body.removeChild(flashDiv);
                        }, { once: true });
+                   }
+
+                   // Function to generate random number within a range
+                   function getRandom(min, max) {
+                       return Math.random() * (max - min) + min;
+                   }
+
+                   // Function to create a bouncing circle
+                   function createBouncingCircle() {
+                       const circle = document.createElement("div");
+                       circle.classList.add("circle");
+                       document.body.appendChild(circle);
+
+                       const initialX = getRandom(0, window.innerWidth - 50);
+                       const initialY = getRandom(0, window.innerHeight - 50);
+                       let speedX = getRandom(5, 7); // Make these variables mutable
+                       let speedY = getRandom(5, 7); // Make these variables mutable
+
+                       circle.style.left = initialX + "px";
+                       circle.style.top = initialY + "px";
+
+                       function updatePosition() {
+                           let x = parseFloat(circle.style.left);
+                           let y = parseFloat(circle.style.top);
+
+                           x += speedX;
+                           y += speedY;
+
+                           if (x + circle.clientWidth > window.innerWidth || x < 0) {
+                               speedX *= -1;
+                           }
+
+                           if (y + circle.clientHeight > window.innerHeight || y < 0) {
+                               speedY *= -1;
+                           }
+
+                           circle.style.left = x + "px";
+                           circle.style.top = y + "px";
+
+                           requestAnimationFrame(updatePosition);
+                       }
+
+                       updatePosition();
+
+                       circle.addEventListener("mouseenter", function() {
+                           // Call the function when the mouse hovers over the circle
+                           doSomethingOnHover();
+                           removeCircle(circle);
+                       });
+                       // Set a timeout to move the circle off-screen and remove it after 4 seconds
+                       setTimeout(function() {
+                           const screenWidth = window.innerWidth;
+                           const screenHeight = window.innerHeight;
+
+                           const randomDirection = Math.random() * 360; // Random angle in degrees
+                           const distance = Math.max(screenWidth, screenHeight) * 1.5; // Distance to move off-screen
+
+                           const endX = screenWidth / 2 + Math.cos(randomDirection) * distance;
+                           const endY = screenHeight / 2 + Math.sin(randomDirection) * distance;
+
+                           // Animate the circle towards the calculated end position
+                           let x = parseFloat(circle.style.left);
+                           let y = parseFloat(circle.style.top);
+
+                           function animateOffScreen() {
+                               x += (endX - x) * 0.05; // Smoothing factor
+                               y += (endY - y) * 0.05; // Smoothing factor
+
+                               circle.style.left = x + "px";
+                               circle.style.top = y + "px";
+
+                               // Continue animation until circle is off-screen
+                               if (Math.abs(endX - x) > 1 || Math.abs(endY - y) > 1) {
+                                   requestAnimationFrame(animateOffScreen);
+                               } else {
+                                   removeCircle(circle);
+                               }
+                           }
+
+                           animateOffScreen();
+                       }, 4000); // Move off-screen after 4000 milliseconds (4 seconds)
+                   }
+
+                   // Function to be called when mouse hovers over the circle
+                   function doSomethingOnHover() {
+                       player.i.playerhealth = player.i.playerhealth.sub(10)
+                       player.i.nohitce308 = new Decimal(1)
+                   }
+
+                   function removeAllCircles() {
+                       const circles = document.querySelectorAll(".circle");
+                       circles.forEach(circle => {
+                           document.body.removeChild(circle);
+                       });
+                   }
+                   // Function to remove a circle element
+                   function removeCircle(circle) {
+                       if (circle && circle.parentNode) {
+                           circle.parentNode.removeChild(circle);
+                       }
+                   }
+
+                   function spawnGreenCircle() {
+                       const greenCircle = document.createElement('div');
+                       greenCircle.classList.add('green-circle');
+                       document.body.appendChild(greenCircle);
+
+                       const circleSize = 100;
+
+                       // Set initial random position within the visible screen area
+                       const maxX = window.innerWidth - circleSize;
+                       const maxY = window.innerHeight - circleSize;
+                       const randomX = Math.random() * maxX;
+                       const randomY = Math.random() * maxY;
+                       greenCircle.style.left = `${randomX}px`;
+                       greenCircle.style.top = `${randomY}px`;
+
+                       const duration = 5000; // 5 seconds
+
+                       setTimeout(() => {
+                           if (greenCircle.parentElement === document.body) {
+                               document.body.removeChild(greenCircle);
+                           }
+                       }, duration);
+
+                       greenCircle.addEventListener('click', () => {
+                           // Do something when clicked
+                           // For example: alert("Circle clicked!");
+                           player.i.playerhealth = player.i.playerhealth.add(8)
+                           if (greenCircle.parentElement === document.body) {
+                               document.body.removeChild(greenCircle);
+                           }
+                       });
+                   }
+                   flashDiv.style.left = '0';
+                   flashDiv.style.width = '100%';
+                   flashDiv.style.height = '100%';
+                   flashDiv.style.backgroundColor = 'white';
+                   flashDiv.style.zIndex = '9999';
+                   body.appendChild(flashDiv);
+
+                   // Flash the screen white
+                   setTimeout(() => {
+                       flashDiv.style.transition = `opacity ${flashDuration / 1000}s ease-out`;
+                       flashDiv.style.opacity = '0';
+                   }, 10);
+
+                   // Remove the div after the animation
+                   flashDiv.addEventListener('transitionend', () => {
+                       body.removeChild(flashDiv);
+                   }, { once: true });
                    }
 
                    // Function to generate random number within a range

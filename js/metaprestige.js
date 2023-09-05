@@ -629,3 +629,6 @@ addLayer("m", {
     ],
     layerShown() { return player.unlockedmetaprestige.eq(1) }
 })
+
+//const audio = new Audio()
+//audio.volume = options.musicVolume / 10;
