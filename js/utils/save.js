@@ -249,7 +249,7 @@ function NaNcheck(data) {
             if (!NaNalert) {
                 clearInterval(interval);
                 NaNalert = true;
-                alert("当当。 我永远不会让 '" + item + "' 达到 NaN 的邪恶数。 我以为这一天永远不会发生。 告诉 Icecreamdude 这件事...")
+                alert("当当。 我永远不会让 '" + item + "' 达到 NaN 的邪恶数字。我以为这一天永远不会发生。刷新，如果不起作用，请告诉 Icecreamdude...")
                 return
             }
         } else if (data[item] instanceof Decimal) {} else if ((!!data[item]) && (data[item].constructor === Object)) {

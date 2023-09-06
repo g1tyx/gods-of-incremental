@@ -18,6 +18,12 @@ let VERSION = {
 }
 
 let changelog = `<h1>Changelog:</h1><br>
+<h3>v1.0.1b - The Hotkey Minor Update<br>
+-Added hotkeys for tab changes.<br>
+-Added hotkey for meta-prestige reset.<br>
+-Many typo fixes.<br>
+-An attempt at fixing the enhance path NaN bug.<br>
+<br>
 		<h3>v1.0b - Chapter 1: The Standard Path.<br>
 		-Added all of the content for chapter 1.<br>
 		-Added the incremental layer.<br>

@@ -630,5 +630,24 @@ addLayer("m", {
     layerShown() { return player.unlockedmetaprestige.eq(1) }
 })
 
-//const audio = new Audio()
-//audio.volume = options.musicVolume / 10;
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'm' && options.toggleHotkey && player.unlockedmetaprestige.eq(1)) {
+      player.tab = "m"
+    }
+  });
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'i' && options.toggleHotkey) {
+      player.tab = "i"
+    }
+  });
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'c' && options.toggleHotkey && hasUpgrade("m", 19)) {
+      player.tab = "c"
+    }
+  });
+  document.addEventListener('keydown', function(event) {
+    if (event.key === 'M' && event.shiftKey && options.toggleHotkey) {
+        doReset("m")
+    }
+  });
+  

@@ -697,8 +697,8 @@
                            }
 
                            let pointloss = new Decimal(0)
-                           if (player.i.enhancebeacontoggle.eq(0)) pointloss = new Decimal(0)
-                           if (player.i.enhancebeacontoggle.eq(1)) pointloss = player.points.mul(0.4)
+                           if (player.i.enhancebeacontoggle.eq(0) || player.points.lt(1)) pointloss = new Decimal(0)
+                           if (player.i.enhancebeacontoggle.eq(1) && player.points.gte(1)) pointloss = player.points.mul(0.4)
 
                            player.points = player.points.sub(pointloss.mul(delta))
 
@@ -902,10 +902,10 @@
                                onClick() {
                                    player.unlockedmetaprestige = new Decimal(1)
                                        // Particle effect
-                                   alert("你好。 事实上，你来这里确实有目的.")
-                                   alert("你是多元宇宙的预言英雄.")
-                                   alert("你注定要重新统一六界.")
-                                   alert("稍后你会知道更多，但现在还不是时候.")
+                                       alert("你好。 事实上，你来这里确实有目的.")
+                                       alert("你是多元宇宙的预言英雄.")
+                                       alert("你注定要重新统一六界.")
+                                       alert("稍后你会知道更多，但现在还不是时候.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1037,11 +1037,11 @@
                                onClick() {
                                    player.prestigelayer = new Decimal(1)
                                        // Particle effect
-                                   alert("Jacorb 和 Aarex. 你必须释放他们.")
-                                   alert("您必须找到所有层.")
-                                   alert("28 已经很多了，不过不用担心。 你会到达那里.")
-                                   alert("走过很多条路，你会一一找到它们.")
-                                   alert("祝你好运.")
+                                       alert("Jacorb 和 Aarex. 你必须释放他们.")
+                                       alert("您必须找到所有层.")
+                                       alert("28 已经很多了，不过不用担心。 你会到达那里.")
+                                       alert("走过很多条路，你会一一找到它们.")
+                                       alert("祝你好运.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1104,9 +1104,9 @@
                                onClick() {
                                    player.boosterlayer = new Decimal(1)
                                        // Particle effect
-                                   alert("你已经找到第二个层了.")
-                                   alert("你还有很长的路要走.")
-                                   alert("每一层都离真相更近一步.")
+                                       alert("你已经找到第二个层了.")
+                                       alert("你还有很长的路要走.")
+                                       alert("每一层都离真相更近一步.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1129,10 +1129,10 @@
                                onClick() {
                                    player.generatorlayer = new Decimal(1)
                                        // Particle effect
-                                   alert("你已经找到第三层了.")
-                                   alert("您已完成前两行.")
-                                   alert("声望树的基本要素.")
-                                   alert("将会出现更复杂的层.")
+                                       alert("你已经找到第三层了.")
+                                       alert("您已完成前两行.")
+                                       alert("声望树的基本要素.")
+                                       alert("将会出现更复杂的层.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1187,11 +1187,11 @@
                                onClick() {
                                    player.enhancelayer = new Decimal(1)
                                        // Particle effect
-                                   alert("你已经找到第四层了.")
-                                   alert("Jacorb 的第一个创作之一，增强器.")
-                                   alert("当然，他将其添加到声望树的第三行.")
-                                   alert("增强点可以快速增加。 （玩过游戏就知道了）")
-                                   alert("我们的策略是首先做到这一点。 所以你做到了.")
+                                       alert("你已经找到第四层了.")
+                                       alert("Jacorb 的第一个创作之一，增强器.")
+                                       alert("当然，他将其添加到声望树的第三行.")
+                                       alert("增强点可以快速增加。 （玩过游戏就知道了）")
+                                       alert("我们的策略是首先做到这一点。 所以你做到了.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1216,10 +1216,10 @@
 
                                    player.i.enhancepath = new Decimal(1)
                                    if (player.yhvrcutscene5.eq(0)) {
-                                       alert("欢迎来到第二条路.")
-                                       alert("您将经常使用此路径.")
-                                       alert("因为您将能够被动地产生增量力量.")
-                                       alert("这条路径将引导您跨越许多更重要的路径.")
+                                    alert("欢迎来到第二条路.")
+                                    alert("您将经常使用此路径.")
+                                    alert("因为您将能够被动地产生增量力量.")
+                                    alert("这条路径将引导您跨越许多更重要的路径.")
                                        player.yhvrcutscene5 = new Decimal(1)
                                    }
                                },
@@ -1374,11 +1374,11 @@
                                onClick() {
                                    player.superboosterlayer = new Decimal(1)
                                        // Particle effect
-                                   alert("啊，你和天体相处得怎么样？?")
-                                   alert("你知道吗，我是唯一一个能和你说话的人.")
-                                   alert("哦耶。 超级助推器.")
-                                   alert("最容易被遗忘的一层.")
-                                   alert("好吧，无论如何。 至少你还没死...")
+                                       alert("啊，你和天体相处得怎么样？?")
+                                       alert("你知道吗，我是唯一一个能和你说话的人.")
+                                       alert("哦耶。 超级助推器.")
+                                       alert("最容易被遗忘的一层.")
+                                       alert("好吧，无论如何。 至少你还没死...")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1401,11 +1401,11 @@
                                onClick() {
                                    player.supergeneratorlayer = new Decimal(1)
                                        // Particle effect
-                                   alert("所以，你现在已经完成了声望树的 25%!")
-                                   alert("看吧，时间确实过得很快.")
-                                   alert("再来 75%，你就完成了，你可以解放我们所有人.")
-                                   alert("嗯，这一层就像是最被遗忘的.")
-                                   alert("不管怎样。 至少不像超级助推器、超级声望、生命精华之类的.")
+                                       alert("所以，你现在已经完成了声望树的 25%!")
+                                       alert("看吧，时间确实过得很快.")
+                                       alert("再来 75%，你就完成了，你可以解放我们所有人.")
+                                       alert("嗯，这一层就像是最被遗忘的.")
+                                       alert("不管怎样。 至少不像超级助推器、超级声望、生命精华之类的.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1540,11 +1540,11 @@
                                onClick() {
                                    player.quirklayer = new Decimal(1)
                                        // Particle effect
-                                   alert("啊，是的。 声望树第四行.")
-                                   alert("这就是事情开始变得更黑暗的地方.")
-                                   alert("看起来天体正在让你做它的工作。 经典动作.")
-                                   alert("似乎也知道战斗的事情。 这很奇怪.")
-                                   alert("每当它谈论一些带有缩写词 M.S 的东西时，不要听它。 这是故障.")
+                                       alert("啊，是的。 声望树第四行.")
+                                       alert("这就是事情开始变得更黑暗的地方.")
+                                       alert("看起来天体正在让你做它的工作。 经典动作.")
+                                       alert("似乎也知道战斗的事情。 这很奇怪.")
+                                       alert("每当它谈论一些带有缩写词 M.S 的东西时，不要听它。 这是故障.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1663,19 +1663,19 @@
                                onClick() {
                                    player.hindrancelayer = new Decimal(1)
                                        // Particle effect
-                                   alert("现在你有 10 层了。 你已经超过了树的三分之一.")
-                                   alert("我很高兴你还活着。 你做得很棒.")
-                                   alert("Jacorb 说 嗨.")
-                                   alert("一旦你能够前往次元领域，你一定要访问我的 galaxy.")
-                                   alert("距离中心有几个宇宙，但你只能在有人的帮助下才能去那里.")
-                                   alert("galaxy.click 的质量控制。 光泽。 他们是真正令人畏惧的批评家.")
-                                   alert("如果你在没有陪同的情况下被发现，你就会被杀.")
-                                   alert("galaxy.click 就像天堂一样，但像你这样的人住在那里是没有用的.")
-                                   alert("只有那些创造了你的人和高级别的增量开发者才会留在那里.")
-                                   alert("在中心，你会见到我的一位朋友.")
-                                   alert("他的名字是恶魔。 他是一位来自死亡领域的法师。 但我们都有他的信任.")
-                                   alert("一旦你完成了声望树，他就会引导你进入这个领域.")
-                                   alert("然后我们都会自由.")
+                                       alert("现在你有 10 层了。 你已经超过了树的三分之一.")
+                                       alert("我很高兴你还活着。 你做得很棒.")
+                                       alert("Jacorb 说 嗨.")
+                                       alert("一旦你能够前往次元领域，你一定要访问我的 galaxy.")
+                                       alert("距离中心有几个宇宙，但你只能在有人的帮助下才能去那里.")
+                                       alert("galaxy.click 的质量控制。 光泽。 他们是真正令人畏惧的批评家.")
+                                       alert("如果你在没有陪同的情况下被发现，你就会被杀.")
+                                       alert("galaxy.click 就像天堂一样，但像你这样的人住在那里是没有用的.")
+                                       alert("只有那些创造了你的人和高级别的增量开发者才会留在那里.")
+                                       alert("在中心，你会见到我的一位朋友.")
+                                       alert("他的名字是恶魔。 他是一位来自死亡领域的法师。 但我们都有他的信任.")
+                                       alert("一旦你完成了声望树，他就会引导你进入这个领域.")
+                                       alert("然后我们都会自由.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1800,10 +1800,10 @@
                                onClick() {
                                    player.solaritylayer = new Decimal(1)
                                        // Particle effect
-                                   alert("太阳神，献给一位神.")
-                                   alert("它将成为许多新工艺资源的门户.")
-                                   alert("一旦您达到这一点，Sitra 会告诉您更多信息.")
-                                   alert("目前来看，不会有太大作用.")
+                                       alert("太阳神，献给一位神.")
+                                       alert("它将成为许多新工艺资源的门户.")
+                                       alert("一旦您达到这一点，Sitra 会告诉您更多信息.")
+                                       alert("目前来看，不会有太大作用.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1908,12 +1908,12 @@
                                onClick() {
                                    player.subspacelayer = new Decimal(1)
                                        // Particle effect
-                                   alert("您已获得子空间层.")
-                                   alert("它是献给Spaceon的。 增量之神之一.")
-                                   alert("它的主要目标是放大主空间层.")
-                                   alert("尽管付出了很多努力，但始终没有出现任何亚空间建筑.")
-                                   alert("你已经接近这个天体的尽头了.")
-                                   alert("我们都很高兴你没有死.")
+                                       alert("您已获得子空间层.")
+                                       alert("它是献给Spaceon的。 增量之神之一.")
+                                       alert("它的主要目标是放大主空间层.")
+                                       alert("尽管付出了很多努力，但始终没有出现任何亚空间建筑.")
+                                       alert("你已经接近这个天体的尽头了.")
+                                       alert("我们都很高兴你没有死.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -2015,11 +2015,11 @@
                                onPurchase() {
                                    if (player.i.prestigeenergy.eq(0)) {
                                        if (player.yhvrcutscene2.eq(0)) {
-                                           alert("很聪明.")
-                                           alert("你选择不产生声望能量.")
-                                           alert("你知道声望能量和腐败会引起问题.")
-                                           alert("这样做你会获得更多的增量能量.")
-                                           alert("做得好.")
+                                        alert("很聪明.")
+                                        alert("你选择不产生声望能量.")
+                                        alert("你知道声望能量和腐败会引起问题.")
+                                        alert("这样做你会获得更多的增量能量.")
+                                        alert("做得好.")
                                        }
                                        player.yhvrcutscene2 = new Decimal(1)
                                        player.i.noenergyboost = new Decimal(2)
@@ -2038,14 +2038,14 @@
                                currencyInternalName: "prestigepoints",
                                onPurchase() {
                                    if (player.yhvrcutscene3.eq(0)) {
-                                       alert("您已到达下一层.")
-                                       alert("这一层很大。 这是这条路的最后一条.")
-                                       alert("最后，你会发现自己面对的是一个天体.")
-                                       alert("别担心，这并不是真正的天体。 这是一个伪天体.")
-                                       alert("你的声望机器的力量应该能有效对抗这个天体.")
-                                       alert("你成为我们英雄的目的是重新统一多元宇宙的六个领域.")
-                                       alert("然而，这只是一小步。 你会很棒的，别担心.")
-                                       alert("只需要时间.")
+                                    alert("您已到达下一层.")
+                                    alert("这一层很大。 这是这条路的最后一条.")
+                                    alert("最后，你会发现自己面对的是一个天体.")
+                                    alert("别担心，这并不是真正的天体。 这是一个伪天体.")
+                                    alert("你的声望机器的力量应该能有效对抗这个天体.")
+                                    alert("你成为我们英雄的目的是重新统一多元宇宙的六个领域.")
+                                    alert("然而，这只是一小步。 你会很棒的，别担心.")
+                                    alert("只需要时间.")
                                    }
                                    player.yhvrcutscene3 = new Decimal(1)
                                },
@@ -2183,13 +2183,13 @@
                                currencyInternalName: "pureenergy",
                                onPurchase() {
                                    if (player.yhvrcutscene7.eq(0)) {
-                                       alert("最后。 你现在在这里。 伪天体.")
-                                       alert("它的名字是Ce308。 虽然是伪天体，但威力还是相当大的.")
-                                       alert("你不敢去死。 我们无法再承受另一次伤亡.")
-                                       alert("请记住，你随时都可能被杀死.")
-                                       alert("即使天神变坏，也要坚持你的直觉.")
-                                       alert("无论遇到什么困难，都要沿着标准路径不断前进.")
-                                       alert("祝你好运.")
+                                    alert("最后。 你现在在这里。 伪天体.")
+                                    alert("它的名字是Ce308。 虽然是伪天体，但威力还是相当大的.")
+                                    alert("你不敢去死。 我们无法再承受另一次伤亡.")
+                                    alert("请记住，你随时都可能被杀死.")
+                                    alert("即使天神变坏，也要坚持你的直觉.")
+                                    alert("无论遇到什么困难，都要沿着标准路径不断前进.")
+                                    alert("祝你好运.")
                                    }
                                    player.yhvrcutscene7 = new Decimal(1)
                                },
@@ -2399,7 +2399,7 @@
                                },
                                display() {
                                    return "which are producing +" + format(tmp[this.layer].buyables[this.id].effect) + " points per second.\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Points"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Points"
                                },
                                buy() {
                                    let base = new Decimal(1)
@@ -2427,7 +2427,7 @@
                                },
                                display() {
                                    return "which are boosting points by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Points"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Points"
                                },
                                buy() {
                                    let base = new Decimal(10)
@@ -2454,7 +2454,7 @@
                                },
                                display() {
                                    return "which are boosting points by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Points"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Points"
                                },
                                buy() {
                                    let base = new Decimal(100)
@@ -2481,7 +2481,7 @@
                                },
                                display() {
                                    return "which are boosting points by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
                                },
                                buy() {
                                    let base = new Decimal(1)
@@ -2509,7 +2509,7 @@
                                },
                                display() {
                                    return "which are producing +" + format(tmp[this.layer].buyables[this.id].effect) + " prestige energy per second.\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Prestige Points"
                                },
                                buy() {
                                    let base = new Decimal(5)
@@ -2536,7 +2536,7 @@
                                },
                                display() {
                                    return "which are producing +" + format(tmp[this.layer].buyables[this.id].effect) + " generator energy per second.\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Pure Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Pure Energy"
                                },
                                buy() {
                                    let base = new Decimal(2)
@@ -2561,7 +2561,7 @@
                                },
                                display() {
                                    return "which are producing +" + format(tmp[this.layer].buyables[this.id].effect) + " booster energy per second.\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Pure Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Pure Energy"
                                },
                                buy() {
                                    let base = new Decimal(2)
@@ -2586,7 +2586,7 @@
                                },
                                display() {
                                    return "You can own +" + format(tmp[this.layer].buyables[this.id].effect) + " prestige machines before corruptions spawn.\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Booster Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Booster Energy"
                                },
                                buy() {
                                    let base = new Decimal(100)
@@ -2611,7 +2611,7 @@
                                },
                                display() {
                                    return "which are boosting prestige energy gain and dividing the downside by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Generator Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Generator Energy"
                                },
                                buy() {
                                    let base = new Decimal(100)
@@ -2636,7 +2636,7 @@
                                },
                                display() {
                                    return "which are boosting generator energy by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Booster Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Booster Energy"
                                },
                                buy() {
                                    let base = new Decimal(2500)
@@ -2661,7 +2661,7 @@
                                },
                                display() {
                                    return "which are boosting booster energy by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Generator Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Generator Energy"
                                },
                                buy() {
                                    let base = new Decimal(2500)
@@ -2686,7 +2686,7 @@
                                },
                                display() {
                                    return "which are boosting prestige points and pure, prestige, generator, and booster energy by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Pure Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Pure Energy"
                                },
                                buy() {
                                    let base = new Decimal(1000)
@@ -2711,7 +2711,7 @@
                                },
                                display() {
                                    return "which are boosting celestial energy by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Quirk Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Quirk Energy"
                                },
                                buy() {
                                    let base = new Decimal(100)
@@ -2736,7 +2736,7 @@
                                },
                                display() {
                                    return "which are boosting quirk energy by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Energy"
                                },
                                buy() {
                                    let base = new Decimal(25)
@@ -2758,7 +2758,7 @@
                                },
                                display() {
                                    return "which are generating +" + format(tmp[this.layer].buyables[this.id].effect) + " hindrance energy per second.\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Energy"
                                },
                                buy() {
                                    let base = new Decimal(1e7)
@@ -2780,7 +2780,7 @@
                                },
                                display() {
                                    return "which are boosting hindrance energy by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Energy"
                                },
                                buy() {
                                    let base = new Decimal(4e7)
@@ -2802,7 +2802,7 @@
                                },
                                display() {
                                    return "which are boosting hindrance energy by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Energy"
                                },
                                buy() {
                                    let base = new Decimal(2e8)
@@ -2824,7 +2824,7 @@
                                },
                                display() {
                                    return "which are boosting hindrance energy by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Celestial Energy"
                                },
                                buy() {
                                    let base = new Decimal(1e9)
@@ -2846,7 +2846,7 @@
                                },
                                display() {
                                    return "which are boosting hindrance energy by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Hindrance Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Hindrance Energy"
                                },
                                buy() {
                                    let base = new Decimal(10000)
@@ -2868,7 +2868,7 @@
                                },
                                display() {
                                    return "which are boosting hindrance energy by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Hindrance Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Hindrance Energy"
                                },
                                buy() {
                                    let base = new Decimal(1e5)
@@ -2890,7 +2890,7 @@
                                },
                                display() {
                                    return "which are boosting hindrance energy by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Hindrance Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Hindrance Energy"
                                },
                                buy() {
                                    let base = new Decimal(1e7)
@@ -2912,7 +2912,7 @@
                                },
                                display() {
                                    return "which are boosting hindrance energy by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Hindrance Energy"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Hindrance Energy"
                                },
                                buy() {
                                    let base = new Decimal(1e9)
@@ -2934,7 +2934,7 @@
                                },
                                display() {
                                    return "which are boosting celestial energy by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Hindrance Points"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Hindrance Points"
                                },
                                buy() {
                                    let base = new Decimal(10)
@@ -2956,7 +2956,7 @@
                                },
                                display() {
                                    return "which are boosting celestial energy by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Hindrance Points"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Hindrance Points"
                                },
                                buy() {
                                    let base = new Decimal(100)
@@ -2978,7 +2978,7 @@
                                },
                                display() {
                                    return "which are boosting celestial energy by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Hindrance Points"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Hindrance Points"
                                },
                                buy() {
                                    let base = new Decimal(1000)
@@ -3000,7 +3000,7 @@
                                },
                                display() {
                                    return "which are boosting celestial energy by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Hindrance Points"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Hindrance Points"
                                },
                                buy() {
                                    let base = new Decimal(10000)
@@ -3022,7 +3022,7 @@
                                },
                                display() {
                                    return "which are boosting true machines by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " True Machines"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " True Machines"
                                },
                                buy() {
                                    let base = new Decimal(10)
@@ -3044,7 +3044,7 @@
                                },
                                display() {
                                    return "which are boosting true machines by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " True Machines"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " True Machines"
                                },
                                buy() {
                                    let base = new Decimal(200)
@@ -3066,7 +3066,7 @@
                                },
                                display() {
                                    return "which are boosting true machines by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " True Machines"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " True Machines"
                                },
                                buy() {
                                    let base = new Decimal(3000)
@@ -3093,7 +3093,7 @@
                                },
                                display() {
                                    return "which are boosting prestige points by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Enhance Points"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Enhance Points"
                                },
                                buy() {
                                    let base = new Decimal(10)
@@ -3118,7 +3118,7 @@
                                },
                                display() {
                                    return "which are boosting points by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Beacon Points"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Beacon Points"
                                },
                                buy() {
                                    let base = new Decimal(100)
@@ -3143,7 +3143,7 @@
                                },
                                display() {
                                    return "which are boosting prestige points by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Beacon Points"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Beacon Points"
                                },
                                buy() {
                                    let base = new Decimal(200)
@@ -3168,7 +3168,7 @@
                                },
                                display() {
                                    return "which are boosting enhance points by x" + format(tmp[this.layer].buyables[this.id].effect) + ".\n\
-                                       Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Beacon Points"
+                    Cost: " + format(tmp[this.layer].buyables[this.id].cost) + " Beacon Points"
                                },
                                buy() {
                                    let base = new Decimal(500)
@@ -4431,55 +4431,55 @@
                    // Add CSS keyframes animation for rotation
                    const styleSheet = document.createElement('style');
                    styleSheet.innerHTML = `
-                   @keyframes shake-random {
-                     0% {
-                       transform: translate(0);
-                     }
-                     10% {
-                       transform: translate(-5px, -5px);
-                     }
-                     20% {
-                       transform: translate(5px, -5px);
-                     }
-                     30% {
-                       transform: translate(-5px, 5px);
-                     }
-                     40% {
-                       transform: translate(5px, -5px);
-                     }
-                     50% {
-                       transform: translate(-5px, 5px);
-                     }
-                     60% {
-                       transform: translate(5px, 5px);
-                     }
-                     70% {
-                       transform: translate(-5px, -5px);
-                     }
-                     80% {
-                       transform: translate(5px, 5px);
-                     }
-                     90% {
-                       transform: translate(-5px, -5px);
-                     }
-                     100% {
-                       transform: translate(0);
-                     }
-                   }
-                   `;
+@keyframes shake-random {
+  0% {
+    transform: translate(0);
+  }
+  10% {
+    transform: translate(-5px, -5px);
+  }
+  20% {
+    transform: translate(5px, -5px);
+  }
+  30% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(5px, -5px);
+  }
+  50% {
+    transform: translate(-5px, 5px);
+  }
+  60% {
+    transform: translate(5px, 5px);
+  }
+  70% {
+    transform: translate(-5px, -5px);
+  }
+  80% {
+    transform: translate(5px, 5px);
+  }
+  90% {
+    transform: translate(-5px, -5px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+`;
                    document.head.appendChild(styleSheet);
 
                    const styleSheet2 = document.createElement('style');
                    styleSheet2.innerHTML = `
-                   @keyframes orbit {
-                       0% {
-                           transform: rotate(0deg) translateX(175px) rotate(0deg);
-                         }
-                         100% {
-                           transform: rotate(360deg) translateX(175px) rotate(-360deg);
-                         }
-                     }
-                     `;
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(175px) rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg) translateX(175px) rotate(-360deg);
+      }
+  }
+  `;
 
                    document.head.appendChild(styleSheet2);
 
