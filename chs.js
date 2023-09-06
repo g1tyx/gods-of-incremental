@@ -390,7 +390,7 @@ var cnItems = {
     "Scrap metal found in worn-out prestige machines. Not very durable. Same durability as wood. However, this scrap metal is efficient in containing energy, as the energy contained within it won't escape, making this scrap metal useful.": "在破旧的威望机器中发现的废金属。不太耐用。与木材相同的耐用性。",
     "See you when you have made the battery.": "等你制作好电池后见。",
     "Start Crafting": "开始制作",
-    "Stop Crafting": "停止手工制作",
+    "Stop Crafting": "停止制作",
     "Time, the fourth dimension. This piece of metal contains the energy of this dimension, however in small amounts. This metal is used to make time capsules, which produce time energy. Time energy is the weaker version of eternity...": "时间，第四维度。这块金属蕴含着这个维度的能量，不过数量很少。这种金属用来制作时间胶囊，时间胶囊会产生时间能量。时间能量是永恒的弱化版本……",
     "Wires that could have been in prestige machines, but you decided to not produce them. This wire is specific to prestige energy and prestige energy only.": "电线本来可以用于高端机器，但您决定不生产它们。",
     "You must meta-prestige in order to claim the resources.": "您必须获得元威望才能获得资源。",
