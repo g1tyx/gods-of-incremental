@@ -676,7 +676,6 @@
                                player.injacorbcutscene = new Decimal(0)
                            }
                            if (player.beaconscene.gt(0) && player.beaconcutscene.eq(1)) {
-                               player.enhancescene = new Decimal(25)
                                player.injacorbcutscene = new Decimal(1)
                            }
 
@@ -695,12 +694,6 @@
                                if (hasUpgrade("m", 18)) player.i.metaprestigetime = player.i.metaprestigetime.add(10)
                                if (hasUpgrade("i", 105)) player.i.beaconpoints = player.i.beaconpoints.add(player.i.beaconpointstoget)
                            }
-
-                           let pointloss = new Decimal(0)
-                           if (player.i.enhancebeacontoggle.eq(0) || player.points.lt(1)) pointloss = new Decimal(0)
-                           if (player.i.enhancebeacontoggle.eq(1) && player.points.gte(1)) pointloss = player.points.mul(0.4)
-
-                           player.points = player.points.sub(pointloss.mul(delta))
 
                            if (player.beaconpointscene.eq(17)) {
                                player.beaconpointcutscene = new Decimal(0)
@@ -902,10 +895,10 @@
                                onClick() {
                                    player.unlockedmetaprestige = new Decimal(1)
                                        // Particle effect
-                                   alert("你好。 事实上，你来这里确实有目的.")
-                                   alert("你是多元宇宙的预言英雄.")
-                                   alert("你注定要重新统一六界.")
-                                   alert("稍后你会知道更多，但现在还不是时候.")
+                                   alert("Hello. As a matter of fact, you do have a purpose here.")
+                                   alert("You are the prophesied hero of the multiverse.")
+                                   alert("You are destined to reunite the six realms.")
+                                   alert("You will know more later, but now is not the time.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1037,11 +1030,11 @@
                                onClick() {
                                    player.prestigelayer = new Decimal(1)
                                        // Particle effect
-                                   alert("Jacorb 和 Aarex. 你必须释放他们.")
-                                   alert("您必须找到所有层.")
-                                   alert("28 已经很多了，不过不用担心。 你会到达那里.")
-                                   alert("走过很多条路，你会一一找到它们.")
-                                   alert("祝你好运.")
+                                   alert("Jacorb and Aarex. You must free them.")
+                                   alert("You must find all the layers.")
+                                   alert("28 is a lot, but don't worry. You will get there.")
+                                   alert("Going through many paths, you will find each of them one by one.")
+                                   alert("Good luck.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1104,9 +1097,9 @@
                                onClick() {
                                    player.boosterlayer = new Decimal(1)
                                        // Particle effect
-                                   alert("你已经找到第二个层了.")
-                                   alert("你还有很长的路要走.")
-                                   alert("每一层都离真相更近一步.")
+                                   alert("You have found the second layer.")
+                                   alert("You still have a long way to go.")
+                                   alert("Each layer is a step closer to the truth.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1129,10 +1122,10 @@
                                onClick() {
                                    player.generatorlayer = new Decimal(1)
                                        // Particle effect
-                                   alert("你已经找到第三层了.")
-                                   alert("您已完成前两行.")
-                                   alert("声望树的基本要素.")
-                                   alert("将会出现更复杂的层.")
+                                   alert("You have found the third layer.")
+                                   alert("You are done with the first two rows.")
+                                   alert("The fundamental elements of the prestige tree.")
+                                   alert("More complex layers will arise.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1187,11 +1180,11 @@
                                onClick() {
                                    player.enhancelayer = new Decimal(1)
                                        // Particle effect
-                                   alert("你已经找到第四层了.")
-                                   alert("Jacorb 的第一个创作之一，增强器.")
-                                   alert("当然，他将其添加到声望树的第三行.")
-                                   alert("增强点可以快速增加。 （玩过游戏就知道了）")
-                                   alert("我们的策略是首先做到这一点。 所以你做到了.")
+                                   alert("You have found the fourth layer.")
+                                   alert("One of Jacorb's very first creations, enhancers.")
+                                   alert("Of course, he added it to the third row of the prestige tree.")
+                                   alert("Enhance points can increase really fast. (You know if you played the game)")
+                                   alert("The strategy is to get that first. So you did.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1216,10 +1209,10 @@
 
                                    player.i.enhancepath = new Decimal(1)
                                    if (player.yhvrcutscene5.eq(0)) {
-                                       alert("欢迎来到第二条路.")
-                                       alert("您将经常使用此路径.")
-                                       alert("因为您将能够被动地产生增量力量.")
-                                       alert("这条路径将引导您跨越许多更重要的路径.")
+                                       alert("Welcome to the second path.")
+                                       alert("You will use this path often.")
+                                       alert("As you will be able to produce incremental power passively.")
+                                       alert("This path will guide you across lots of more important paths.")
                                        player.yhvrcutscene5 = new Decimal(1)
                                    }
                                },
@@ -1374,11 +1367,11 @@
                                onClick() {
                                    player.superboosterlayer = new Decimal(1)
                                        // Particle effect
-                                   alert("啊，你和天体相处得怎么样？?")
-                                   alert("你知道吗，我是唯一一个能和你说话的人.")
-                                   alert("哦耶。 超级助推器.")
-                                   alert("最容易被遗忘的一层.")
-                                   alert("好吧，无论如何。 至少你还没死...")
+                                   alert("Ah, how are you doing with the celestial?")
+                                   alert("You know, I am the only one who can speak to you.")
+                                   alert("Oh yeah. Super boosters.")
+                                   alert("One of the more forgettable layers.")
+                                   alert("Well whatever. At least you're not dead...")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1401,11 +1394,11 @@
                                onClick() {
                                    player.supergeneratorlayer = new Decimal(1)
                                        // Particle effect
-                                   alert("所以，你现在已经完成了声望树的 25%!")
-                                   alert("看吧，时间确实过得很快.")
-                                   alert("再来 75%，你就完成了，你可以解放我们所有人.")
-                                   alert("嗯，这一层就像是最被遗忘的.")
-                                   alert("不管怎样。 至少不像超级助推器、超级声望、生命精华之类的.")
+                                   alert("So, you are now 25% done with the prestige tree!")
+                                   alert("See, it really does go by quick.")
+                                   alert("75% more, and you are done, and you can free us all.")
+                                   alert("Well, this layer is like the most forgotten.")
+                                   alert("Whatever. At least it's not like hyper-boosters, super prestige, or life essence.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1540,11 +1533,11 @@
                                onClick() {
                                    player.quirklayer = new Decimal(1)
                                        // Particle effect
-                                   alert("啊，是的。 声望树第四行.")
-                                   alert("这就是事情开始变得更黑暗的地方.")
-                                   alert("看起来天体正在让你做它的工作。 经典动作.")
-                                   alert("似乎也知道战斗的事情。 这很奇怪.")
-                                   alert("每当它谈论一些带有缩写词 M.S 的东西时，不要听它。 这是故障.")
+                                   alert("Ah yes. The fourth row of the prestige tree.")
+                                   alert("This is where things start to take a darker turn.")
+                                   alert("It looks like the celestial is making you do its work. Classic move.")
+                                   alert("Also it seems to know about the fight. That's odd.")
+                                   alert("And whenever it talks about something with the acronym M.S, don't listen to it. It's a malfunction.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1663,19 +1656,19 @@
                                onClick() {
                                    player.hindrancelayer = new Decimal(1)
                                        // Particle effect
-                                   alert("现在你有 10 层了。 你已经超过了树的三分之一.")
-                                   alert("我很高兴你还活着。 你做得很棒.")
-                                   alert("Jacorb 说 嗨.")
-                                   alert("一旦你能够前往次元领域，你一定要访问我的 galaxy.")
-                                   alert("距离中心有几个宇宙，但你只能在有人的帮助下才能去那里.")
-                                   alert("galaxy.click 的质量控制。 光泽。 他们是真正令人畏惧的批评家.")
-                                   alert("如果你在没有陪同的情况下被发现，你就会被杀.")
-                                   alert("galaxy.click 就像天堂一样，但像你这样的人住在那里是没有用的.")
-                                   alert("只有那些创造了你的人和高级别的增量开发者才会留在那里.")
-                                   alert("在中心，你会见到我的一位朋友.")
-                                   alert("他的名字是恶魔。 他是一位来自死亡领域的法师。 但我们都有他的信任.")
-                                   alert("一旦你完成了声望树，他就会引导你进入这个领域.")
-                                   alert("然后我们都会自由.")
+                                   alert("Now you have 10 layers. You are well past a third of the tree.")
+                                   alert("I'm glad that you are still alive. You are doing wonderful.")
+                                   alert("Jacorb says hi.")
+                                   alert("Once you are able to travel to the dimensional realm, you must visit my galaxy.")
+                                   alert("It's a few universes away from the hub, but you should only go there with someone's help.")
+                                   alert("galaxy.click's quality control. Lustre. They are a really feared critic.")
+                                   alert("If you are caught without accompanying someone, you will be killed.")
+                                   alert("galaxy.click is like paradise, but it's no use for someone like you to live there.")
+                                   alert("Only those who have created you and the high-ranking incremental developers stay there.")
+                                   alert("In the center, you will meet up with one of my friends.")
+                                   alert("His name is DEMONIN. He is a mage from the death realm. However, we all have his trust.")
+                                   alert("He should guide you into the realm once you have finished the prestige tree.")
+                                   alert("And then we will all be free.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1800,10 +1793,10 @@
                                onClick() {
                                    player.solaritylayer = new Decimal(1)
                                        // Particle effect
-                                   alert("太阳神，献给一位神.")
-                                   alert("它将成为许多新工艺资源的门户.")
-                                   alert("一旦您达到这一点，Sitra 会告诉您更多信息.")
-                                   alert("目前来看，不会有太大作用.")
+                                   alert("Solarity, dedicated to one of the gods.")
+                                   alert("It will be the gateway to many new crafting resources.")
+                                   alert("Sitra will tell you more once you've reached that point.")
+                                   alert("For now, it won't do much.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -1908,12 +1901,12 @@
                                onClick() {
                                    player.subspacelayer = new Decimal(1)
                                        // Particle effect
-                                   alert("您已获得子空间层.")
-                                   alert("它是献给Spaceon的。 增量之神之一.")
-                                   alert("它的主要目标是放大主空间层.")
-                                   alert("尽管付出了很多努力，但始终没有出现任何亚空间建筑.")
-                                   alert("你已经接近这个天体的尽头了.")
-                                   alert("我们都很高兴你没有死.")
+                                   alert("You have obtained the subspace layer.")
+                                   alert("It was dedicated to Spaceon. One of the gods of incremental.")
+                                   alert("Its main goal was to amplify the main space layer.")
+                                   alert("Despite many efforts, there were never any subspace buildings.")
+                                   alert("You are so close to the end of this celestial.")
+                                   alert("We are all glad you are not dead.")
                                    createParticles();
                                    createParticles();
                                    createParticles();
@@ -2015,11 +2008,11 @@
                                onPurchase() {
                                    if (player.i.prestigeenergy.eq(0)) {
                                        if (player.yhvrcutscene2.eq(0)) {
-                                           alert("很聪明.")
-                                           alert("你选择不产生声望能量.")
-                                           alert("你知道声望能量和腐败会引起问题.")
-                                           alert("这样做你会获得更多的增量能量.")
-                                           alert("做得好.")
+                                           alert("Very smart.")
+                                           alert("You chose to not produce prestige energy.")
+                                           alert("You know that prestige energy and corruption can cause issues.")
+                                           alert("You will gain more incremental energy from doing this.")
+                                           alert("Great job.")
                                        }
                                        player.yhvrcutscene2 = new Decimal(1)
                                        player.i.noenergyboost = new Decimal(2)
@@ -2038,14 +2031,14 @@
                                currencyInternalName: "prestigepoints",
                                onPurchase() {
                                    if (player.yhvrcutscene3.eq(0)) {
-                                       alert("您已到达下一层.")
-                                       alert("这一层很大。 这是这条路的最后一条.")
-                                       alert("最后，你会发现自己面对的是一个天体.")
-                                       alert("别担心，这并不是真正的天体。 这是一个伪天体.")
-                                       alert("你的声望机器的力量应该能有效对抗这个天体.")
-                                       alert("你成为我们英雄的目的是重新统一多元宇宙的六个领域.")
-                                       alert("然而，这只是一小步。 你会很棒的，别担心.")
-                                       alert("只需要时间.")
+                                       alert("You have reached the next layer.")
+                                       alert("This layer is huge. It is the final one of this path.")
+                                       alert("At the end, you will find yourself against a celestial.")
+                                       alert("Don't worry, it's not really a celestial. It's a pseudo-celestial.")
+                                       alert("The power of your prestige machines should be effective against this celestial.")
+                                       alert("Your purpose of being our hero is to REUNITE THE SIX REALMS OF THE MULTIVERSE.")
+                                       alert("However, it will be baby steps. You will be great, don't worry.")
+                                       alert("It will only take time.")
                                    }
                                    player.yhvrcutscene3 = new Decimal(1)
                                },
@@ -2183,13 +2176,13 @@
                                currencyInternalName: "pureenergy",
                                onPurchase() {
                                    if (player.yhvrcutscene7.eq(0)) {
-                                       alert("最后。 你现在在这里。 伪天体.")
-                                       alert("它的名字是Ce308。 虽然是伪天体，但威力还是相当大的.")
-                                       alert("你不敢去死。 我们无法再承受另一次伤亡.")
-                                       alert("请记住，你随时都可能被杀死.")
-                                       alert("即使天神变坏，也要坚持你的直觉.")
-                                       alert("无论遇到什么困难，都要沿着标准路径不断前进.")
-                                       alert("祝你好运.")
+                                       alert("Finally. You are here now. The pseudo-celestial.")
+                                       alert("Its name is Ce308. Despite it being a pseudo-celestial, it is still quite powerful.")
+                                       alert("Don't you dare die. We can't afford another casualty.")
+                                       alert("Just remember you can be killed at any moment.")
+                                       alert("Even if the celestial goes rogue, just stick with your gut.")
+                                       alert("Keep progressing through the standard path, no matter what it throws at you.")
+                                       alert("Good luck.")
                                    }
                                    player.yhvrcutscene7 = new Decimal(1)
                                },
@@ -3720,7 +3713,7 @@
                                        ["blank", "25px"],
                                        ["raw-html", function() { return player.i.enhancepath.eq(1) && player.beaconcutscene.eq(0) ? "<h3>You are making " + format(player.i.beaconpowerpersecond) + " beacon power per second." : "" }, { "color": "#b82fbd", "font-size": "18px", "font-family": "monospace" }],
                                        ["raw-html", function() { return player.i.enhancepath.eq(1) && player.beaconcutscene.eq(0) ? "<h3>You will produce " + format(player.m.score.mul(player.i.incrementalpowergain)) + " incremental power (based on score)." : "" }, { "color": "#b82fbd", "font-size": "18px", "font-family": "monospace" }],
-                                       ["raw-html", function() { return player.i.enhancepath.eq(1) && player.beaconcutscene.eq(0) ? "<h3>You lose 40% of points per second if your beacon is toggled on." : "" }, { "color": "#b82fbd", "font-size": "18px", "font-family": "monospace" }],
+                                       ["raw-html", function() { return player.i.enhancepath.eq(1) && player.beaconcutscene.eq(0) ? "<h3>Your point gain is square rooted if beacon is toggled on." : "" }, { "color": "#b82fbd", "font-size": "18px", "font-family": "monospace" }],
                                        ["blank", "25px"],
                                        ["bar", "beaconbar"],
                                    ]
