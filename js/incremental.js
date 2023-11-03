@@ -1483,7 +1483,7 @@
                 // Particle effect
                 alert("你已经找到了第四层。")
                 alert("Jacorb 的第一个创作之一，增强器。")
-                alert("当然，他将其添加到了威望树的第三排。")
+                alert("当然，他将其添加到了声望树的第三排。")
                 alert("增强点可以快速增加。 （玩过游戏就知道了）")
                 alert("我们的策略是首先做到这一点。 所以你做到了。")
                 createParticles();
@@ -2083,10 +2083,10 @@ opacity: "0.9",
             onClick() {
                 player.solaritylayer = new Decimal(1)
                 // Particle effect
-                alert("Solarity, dedicated to one of the gods.")
-                alert("It will be the gateway to many new crafting resources.")
-                alert("Artis and Sitra will tell you more once you've reached that point.")
-                alert("For now, it won't do much.")
+                alert("太阳神，献给一位神。")
+                alert("它将成为许多新工艺资源的门户。")
+                alert("一旦您达到了这一点，Artis 和 Sitra 就会告诉您更多信息。")
+                alert("就目前而言，它不会起多大作用。")
                 createParticles();
                 createParticles();
                 createParticles();
@@ -2201,12 +2201,12 @@ opacity: "0.9",
             onClick() {
                 player.subspacelayer = new Decimal(1)
                 // Particle effect
-                alert("You have obtained the subspace layer.")
-                alert("It was dedicated to Spaceon. One of the gods of incremental.")
-                alert("Its main goal was to amplify the main space layer.")
-                alert("Despite many efforts, there were never any subspace buildings.")
-                alert("You are so close to the end of this celestial.")
-                alert("We are all glad you are not dead.")
+                alert("您已获得子空间图层。")
+                alert("它是献给Spaceon的。 增量神之一。")
+                alert("它的主要目标是放大主空间层。")
+                alert("尽管付出了很多努力，但始终没有出现任何亚空间建筑。")
+                alert("你已经非常接近这个天体的终点了。")
+                alert("我们都很高兴你没有死。")
                 createParticles();
                 createParticles();
                 createParticles();
@@ -2368,11 +2368,11 @@ opacity: "0.9",
             onClick() {
                 player.balanceenergylayer = new Decimal(1)
                 // Particle effect
-                alert("Balance energy. One of the main ingredients of jacorbian energy.")
-                alert("It has very unique properties.")
-                alert("It is found everywhere in the multiverse, but can only be sensed by few.")
-                alert("Without it, the entropy in an area would skyrocket.")
-                alert("The only place with very little to no balance energy is the void.")
+                alert("平衡能量。jacorbian能量的主要成分之一。")
+                alert("它具有非常独特的特性。")
+                alert("它在多元宇宙中随处可见，但只有少数人能够感受到。")
+                alert("没有它，一个区域的熵就会飙升。")
+                alert("唯一具有很少甚至没有平衡能量的地方是虚空。")
                 createParticles();
                 createParticles();
                 createParticles();
@@ -2540,12 +2540,12 @@ opacity: "0.9",
             onClick() {
                 player.magiclayer = new Decimal(1)
                 // Particle effect
-                alert("Magic. One of the most important forces of the multiverse.")
-                alert("Half the dimensions have it, half of them don't.")
-                alert("It is the force that can manipulate the laws of a given world.")
-                alert("With magic, anything can happen.")
-                alert("Also, you will meet my friend Demonin.")
-                alert("Hope you guys become friends!")
+                alert("魔法。 多元宇宙最重要的力量之一。")
+                alert("一半维度有它，一半没有。")
+                alert("它是可以操纵特定世界法则的力量。")
+                alert("有了魔法，任何事情都可能发生。")
+                alert("另外，你还会见到我的朋友德莫宁。")
+                alert("希望你们成为朋友！")
                 createParticles();
                 createParticles();
                 createParticles();
@@ -2704,11 +2704,11 @@ opacity: "0.9",
                 {
                     if (player.yhvrcutscene2.eq(0))
                     {
-                   alert("Very smart.")
-                   alert("You chose to not produce prestige energy.")
-                   alert("You know that prestige energy and corruption can cause issues.")
-                   alert("You will gain more incremental energy from doing this.")
-                   alert("Great job.")
+                   alert("很聪明。")
+                   alert("你选择不产生声望能量。")
+                   alert("您知道，声望能量和腐败可能会引起问题。")
+                   alert("这样做你会获得更多的增量能量。")
+                   alert("做得好。")
                     }
                    player.yhvrcutscene2 = new Decimal(1)
                    player.i.noenergyboost = new Decimal(2)
@@ -2734,7 +2734,7 @@ opacity: "0.9",
                    alert("这一层很大。 这是这条道路的最后一条。")
                    alert("最后，你会发现自己面对的是一个天体。")
                    alert("别担心，这并不是真正的天上人。 这是一个伪天体。")
-                   alert("你的威望机器的力量应该能有效对抗这个天体。")
+                   alert("你的声望机器的力量应该能有效对抗这个天体。")
                    alert("你成为我们英雄的目的是重新统一多元宇宙的六个领域。")
                    alert("然而，这只是一小步。 你会很棒的，别担心。")
                    alert("这只需要时间。")
