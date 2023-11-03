@@ -1200,10 +1200,10 @@
             onClick() {
                 player.unlockedmetaprestige = new Decimal(1)
                 // Particle effect
-                alert("Hello. As a matter of fact, you do have a purpose here.")
-                alert("You are the prophesied hero of the multiverse.")
-                alert("You are destined to reunite the six realms.")
-                alert("You will know more later, but now is not the time.")
+                alert("你好。 事实上，你来这里确实是有目的的。")
+                alert("你是多元宇宙的预言英雄。")
+                alert("你们注定要重新统一六界。")
+                alert("稍后你会知道更多，但现在还不是时候。")
                 createParticles();
                 createParticles();
                 createParticles();
@@ -1334,11 +1334,11 @@
             onClick() {
                 player.prestigelayer = new Decimal(1)
                 // Particle effect
-                alert("Jacorb and Aarex. You must free them.")
-                alert("You must find all the layers.")
-                alert("28 is a lot, but don't worry. You will get there.")
-                alert("Going through many paths, you will find each of them one by one.")
-                alert("Good luck.")
+                alert("Jacorb和Aarex。 你必须释放他们。")
+                alert("您必须找到所有图层。")
+                alert("28 已经很多了，不过不用担心。 你会到达那里的。")
+                alert("走过很多条路，你会一一找到它们。")
+                alert("祝你好运。")
                 createParticles();
                 createParticles();
                 createParticles();
@@ -1400,9 +1400,9 @@
             onClick() {
                 player.boosterlayer = new Decimal(1)
                 // Particle effect
-                alert("You have found the second layer.")
-                alert("You still have a long way to go.")
-                alert("Each layer is a step closer to the truth.")
+                alert("你已经找到第二层了.")
+                alert("你还有很长的路要走.")
+                alert("每一层都离真相更近一步.")
                 createParticles();
                 createParticles();
                 createParticles();
@@ -1424,10 +1424,10 @@
             onClick() {
                 player.generatorlayer = new Decimal(1)
                 // Particle effect
-                alert("You have found the third layer.")
-                alert("You are done with the first two rows.")
-                alert("The fundamental elements of the prestige tree.")
-                alert("More complex layers will arise.")
+                alert("你已经找到第三层了.")
+                alert("您已完成前两行.")
+                alert("声望树的基本要素.")
+                alert("将会出现更复杂的层.")
                 createParticles();
                 createParticles();
                 createParticles();
@@ -1481,11 +1481,11 @@
             onClick() {
                 player.enhancelayer = new Decimal(1)
                 // Particle effect
-                alert("You have found the fourth layer.")
-                alert("One of Jacorb's very first creations, enhancers.")
-                alert("Of course, he added it to the third row of the prestige tree.")
-                alert("Enhance points can increase really fast. (You know if you played the game)")
-                alert("The strategy is to get that first. So you did.")
+                alert("你已经找到了第四层。")
+                alert("Jacorb 的第一个创作之一，增强器。")
+                alert("当然，他将其添加到了威望树的第三排。")
+                alert("增强点可以快速增加。 （玩过游戏就知道了）")
+                alert("我们的策略是首先做到这一点。 所以你做到了。")
                 createParticles();
                 createParticles();
                 createParticles();
@@ -1509,10 +1509,10 @@
                 player.i.enhancepath = new Decimal(1)
                 if (player.yhvrcutscene5.eq(0))
                 {
-                    alert("Welcome to the second path.")
-                    alert("You will use this path often.")
-                    alert("As you will be able to produce incremental power passively.")
-                    alert("This path will guide you across lots of more important paths.")
+                    alert("欢迎来到第二条路。")
+                    alert("您将经常使用此路径。")
+                    alert("因为您将能够被动地产生增量功率。")
+                    alert("这条道路将引导您跨越许多更重要的道路。")
                     player.yhvrcutscene5 = new Decimal(1)
                 }
             },
@@ -1667,11 +1667,11 @@ opacity: "0.9",
             onClick() {
                 player.superboosterlayer = new Decimal(1)
                 // Particle effect
-                alert("Ah, how are you doing with the celestial?")
-                alert("You know, I am the only one who can speak to you.")
-                alert("Oh yeah. Super boosters.")
-                alert("One of the more forgettable layers.")
-                alert("Well whatever. At least you're not dead...")
+                alert("啊，你和天界相处得怎么样？")
+                alert("你知道，我是唯一一个能和你说话的人。")
+                alert("哦耶。 超级助推器。")
+                alert("最容易被遗忘的一层。")
+                alert("好吧，无论如何。 至少你还没死...")
                 createParticles();
                 createParticles();
                 createParticles();
@@ -1692,11 +1692,11 @@ opacity: "0.9",
             onClick() {
                 player.supergeneratorlayer = new Decimal(1)
                 // Particle effect
-                alert("So, you are now 25% done with the prestige tree!")
-                alert("See, it really does go by quick.")
-                alert("75% more, and you are done, and you can free us all.")
-                alert("Well, this layer is like the most forgotten.")
-                alert("Whatever. At least it's not like hyper-boosters, super prestige, or life essence.")
+                alert("所以，你现在已经完成了声望树的 25%！")
+                alert("你看，时间确实过得很快。")
+                alert("再增加 75%，你就完成了，你可以解放我们所有人了。")
+                alert("嗯，这一层是最容易被遗忘的。")
+                alert("任何。 至少不像超级助推器、超级声望、生命精华之类的。")
                 createParticles();
                 createParticles();
                 createParticles();
@@ -1829,11 +1829,11 @@ opacity: "0.9",
             onClick() {
                 player.quirklayer = new Decimal(1)
                 // Particle effect
-                alert("Ah yes. The fourth row of the prestige tree.")
-                alert("This is where things start to take a darker turn.")
-                alert("It looks like the celestial is making you do its work. Classic move.")
-                alert("Also it seems to know about the fight. That's odd.")
-                alert("And whenever it talks about something with the acronym M.S, don't listen to it. It's a malfunction.")
+                alert("是啊。 声望树第四排。")
+                alert("这就是事情开始转向黑暗的地方。")
+                alert("看起来天体正在让你做它的工作。 经典动作。")
+                alert("似乎也知道战斗的事情。 这很奇怪。")
+                alert("每当它谈论一些带有缩写词 M.S 的东西时，不要听它。 这是故障。")
                 createParticles();
                 createParticles();
                 createParticles();
@@ -1950,19 +1950,19 @@ opacity: "0.9",
             onClick() {
                 player.hindrancelayer = new Decimal(1)
                 // Particle effect
-                alert("Now you have 10 layers. You are well past a third of the tree.")
-                alert("I'm glad that you are still alive. You are doing wonderful.")
-                alert("Jacorb says hi.")
-                alert("Once you are able to travel to the dimensional realm, you must visit my galaxy.")
-                alert("It's a few universes away from the hub, but you should only go there with someone's help.")
-                alert("galaxy.click's quality control. Lustre. They are a really feared critic.")
-                alert("If you are caught without accompanying someone, you will be killed.")
-                alert("galaxy.click is like paradise, but it's no use for someone like you to live there.")
-                alert("Only those who have created you and the high-ranking incremental developers stay there.")
-                alert("In the center, you will meet up with one of my friends.")
-                alert("His name is DEMONIN. He is a mage from the death realm. However, we all have his trust.")
-                alert("He should guide you into the realm once you have finished the prestige tree.")
-                alert("And then we will all be free.")
+                alert("现在你有 10 层了。 你已经超过了树的三分之一。")
+                alert("我很高兴你还活着。 你做得很棒。")
+                alert("雅各布打招呼。")
+                alert("一旦你能够前往次元领域，你就必须访问我的星系。")
+                alert("它距离中心有几个宇宙，但你只能在有人的帮助下才能去那里。")
+                alert("Galaxy.click 的质量控制。 光泽。 他们是真正令人畏惧的批评家。")
+                alert("如果你在没有陪同的情况下被发现，你就会被杀。")
+                alert("Galaxy.click 就像天堂，但像你这样的人住在那里是没有用的。")
+                alert("只有那些创造了你的人和高级增量开发人员才会留在那里。")
+                alert("在中心，您将与我的一位朋友会面。")
+                alert("他的名字是恶魔。 他是一位来自死亡领域的法师。 然而，我们都有他的信任。")
+                alert("一旦你完成了声望树，他就会引导你进入这个领域。")
+                alert("然后我们都将获得自由。")
                 createParticles();
                 createParticles();
                 createParticles();
@@ -2245,22 +2245,22 @@ opacity: "0.9",
 
                 if (player.yhvrcutscene9.eq(0))
                 {
-                alert("Nice.")
-                alert("Almost about time I need you to visit galaxy.")
-                alert("But in order to enter, you must bypass its strict quality control.")
-                alert("Someone like you would be obliterated immediately.")
-                alert("You must accompany a GALAXY STAFF MEMBER.")
-                alert("If you don't know any, Thepaperpilot and Ducdat are good staff members.")
-                alert("Also, you may see someone named CRG roaming around...")
-                alert("If I were you, I'd stay away from him.")
-                alert("He has something called a 'neck tree', which was designed to repel newcomers to galaxy.")
-                alert("We haven't had new users in a while.")
-                alert("You may also encounter Sovereign. Someone who can potentially end you.")
-                alert("I don't want to explain much, just don't get near him.")
-                alert("Once you get to the center of the galaxy you'll reach THE GALAXY SINGULARITY.")
-                alert("In the center there will be a very small gem. It is the singularity gem.")
-                alert("This one belonged to the high god INFINITY. Yes, it is a relic.")
-                alert("Alright. Bye.")
+                alert("好的。")
+                alert("快到了我需要你访问银河系的时间了。")
+                alert("但要想进入，就必须绕过其严格的质量控制。")
+                alert("像你这样的人，很快就会被消灭。")
+                alert("您必须有 GALAXY STAFF 成员陪同。")
+                alert("如果您不知道，Thepaperpilot 和 Ducdat 是很好的员工。")
+                alert("另外，你可能会看到一个名叫 CRG 的人在四处游荡……")
+                alert("如果我是你，我就会远离他。")
+                alert("他有一种叫做“脖子树”的东西，旨在排斥银河系的新来者。")
+                alert("我们已经有一段时间没有新用户了。")
+                alert("你也可能会遇到君主。 一个有可能结束你的人。")
+                alert("我不想解释太多，只是不要靠近他。")
+                alert("一旦到达银河系中心，您就会到达银河系奇点。")
+                alert("中心会有一颗非常小的宝石。 它是奇点宝石。")
+                alert("这是属于至高神 无限 的。 是的，它是一个遗迹。")
+                alert("好吧。 再见。")
             }
                 player.yhvrcutscene9 = new Decimal(1)
             },
@@ -2282,20 +2282,20 @@ opacity: "0.9",
                 player.i.quirks = player.i.quirks.add(player.i.quirkstoget)
                 if (player.yhvrcutscene10.eq(0))
                 {
-                alert("You have gained some quirks.")
-                alert("This is the next part of the enhance path.")
-                alert("I have something to tell you.")
-                alert("I used to be normal, a long, long time ago.")
-                alert("I was just some regular guy, working a 9-5 job. I was in corporate hell.")
-                alert("I was naive to the potential of the multiverse.")
-                alert("Heck, I didn't even know anything past my home dimension.")
-                alert("Until one day, someone strange came into my office.")
-                alert("His eyes were on fire. He looked powerful.")
-                alert("He came up to me and told me my soul was at the right frequency for the job.")
-                alert("Little did I know, this job would change everything, forever.")
-                alert("I was supposed to rank high enough to take the spot of noble.")
-                alert("I needed to outrank some other guy who was noble at the time.")
-                alert("I did it.")
+                alert("你已经获得了一些怪癖。")
+                alert("这是增强路径的下一部分。")
+                alert("我有件事要告诉你。")
+                alert("很久很久以前，我曾经很正常。")
+                alert("我只是一个普通人，做着朝九晚五的工作。 我当时正处于公司地狱之中。")
+                alert("我对多元宇宙的潜力很天真。")
+                alert("哎呀，我什至不知道任何超出我的家庭维度的事情。")
+                alert("直到有一天，一个奇怪的人走进了我的办公室。")
+                alert("他的眼睛在燃烧。 他看起来很强大。")
+                alert("他走过来告诉我，我的灵魂处于适合这份工作的频率。")
+                alert("我几乎不知道，这份工作将永远改变一切。")
+                alert("我本来应该有足够高的地位来占据贵族的位置。")
+                alert("我需要超越当时其他一些贵族。")
+                alert("我做到了。")
             }
                 player.yhvrcutscene10 = new Decimal(1)
             },
@@ -2310,20 +2310,20 @@ opacity: "0.9",
                 player.i.quirks = player.i.quirks.add(player.i.quirkstoget)
                 if (player.yhvrcutscene10.eq(0))
                 {
-                alert("You have gained some quirks.")
-                alert("This is the next part of the enhance path.")
-                alert("I have something to tell you.")
-                alert("I used to be normal, a long, long time ago.")
-                alert("I was just some regular guy, working a 9-5 job. I was in corporate hell.")
-                alert("I was naive to the potential of the multiverse.")
-                alert("Heck, I didn't even know anything past my home dimension.")
-                alert("Until one day, someone strange came into my office.")
-                alert("His eyes were on fire. He looked powerful.")
-                alert("He came up to me and told me my soul was at the right frequency for the job.")
-                alert("Little did I know, this job would change everything, forever.")
-                alert("I was supposed to rank high enough to take the spot of noble.")
-                alert("I needed to outrank some other guy who was noble at the time.")
-                alert("I did it.")
+                alert("你已经获得了一些怪癖。")
+                alert("这是增强路径的下一部分。")
+                alert("我有件事要告诉你。")
+                alert("很久很久以前，我曾经很正常。")
+                alert("我只是一个普通人，做着朝九晚五的工作。 我当时正处于公司地狱之中。")
+                alert("我对多元宇宙的潜力很天真。")
+                alert("哎呀，我什至不知道任何超出我的家庭维度的事情。")
+                alert("直到有一天，一个奇怪的人走进了我的办公室。")
+                alert("他的眼睛在燃烧。 他看起来很强大。")
+                alert("他走过来告诉我，我的灵魂处于适合这份工作的频率。")
+                alert("我几乎不知道，这份工作将永远改变一切。")
+                alert("我本来应该有足够高的地位来占据贵族的位置。")
+                alert("我需要超越当时其他一些贵族。")
+                alert("我做到了。")
             }
                 player.yhvrcutscene10 = new Decimal(1)
             },
@@ -2730,14 +2730,14 @@ opacity: "0.9",
             {
                     if (player.yhvrcutscene3.eq(0))
                     {
-                   alert("You have reached the next layer.")
-                   alert("This layer is huge. It is the final one of this path.")
-                   alert("At the end, you will find yourself against a celestial.")
-                   alert("Don't worry, it's not really a celestial. It's a pseudo-celestial.")
-                   alert("The power of your prestige machines should be effective against this celestial.")
-                   alert("Your purpose of being our hero is to REUNITE THE SIX REALMS OF THE MULTIVERSE.")
-                   alert("However, it will be baby steps. You will be great, don't worry.")
-                   alert("It will only take time.")
+                   alert("您已到达下一层。")
+                   alert("这一层很大。 这是这条道路的最后一条。")
+                   alert("最后，你会发现自己面对的是一个天体。")
+                   alert("别担心，这并不是真正的天上人。 这是一个伪天体。")
+                   alert("你的威望机器的力量应该能有效对抗这个天体。")
+                   alert("你成为我们英雄的目的是重新统一多元宇宙的六个领域。")
+                   alert("然而，这只是一小步。 你会很棒的，别担心。")
+                   alert("这只需要时间。")
                 }
                    player.yhvrcutscene3 = new Decimal(1)
             },
@@ -2890,13 +2890,13 @@ opacity: "0.9",
             {
                     if (player.yhvrcutscene7.eq(0))
                     {
-                   alert("Finally. You are here now. The pseudo-celestial.")
-                   alert("Its name is Ce308. Despite it being a pseudo-celestial, it is still quite powerful.")
-                   alert("Don't you dare die. We can't afford another casualty.")
-                   alert("Just remember you can be killed at any moment.")
-                   alert("Even if the celestial goes rogue, just stick with your gut.")
-                   alert("Keep progressing through the standard path, no matter what it throws at you.")
-                   alert("Good luck.")
+                   alert("最后。 你现在在这里。 伪天体。")
+                   alert("它的名字是Ce308。 虽然是伪天尊，但威力却还是相当强大。")
+                   alert("你不敢去死。 我们不能再承受第二次伤亡。")
+                   alert("请记住，您随时都可能被杀死。")
+                   alert("即使天神变坏了，也要坚持你的直觉。")
+                   alert("无论遇到什么困难，都要沿着标准路径不断前进。")
+                   alert("祝你好运。")
                   }
                    player.yhvrcutscene7 = new Decimal(1)
             },
@@ -3136,17 +3136,17 @@ opacity: "0.9",
             {  
                     if (player.yhvrcutscene11.eq(0))  
                     {  
-                   alert("When he offered me the job, I was beyond confused.")  
-                   alert("Multiple dimensions? Realms? War? Incremental?")  
-                   alert("I turned him down. He wasn't convincing enough.")  
-                   alert("But every day after that, I noticed things changing.")  
-                   alert("Everyone I knew started shifting their personalities.")  
-                   alert("They all became mindless husks, they had all become robot-like.")  
-                   alert("After that, it was the weather.")  
-                   alert("It was raining every day, all day. The sun never showed itself at all.")  
-                   alert("Then, it was the very fabric of reality itself.")  
-                   alert("Things started falling upwards, telelporting randomly, and a lot more wacky events.")  
-                   alert("Then something grand happened...")
+                   alert("当他向我提供这份工作时，我感到非常困惑。")  
+                   alert("多个维度？ 领域？ 战争？ 增加的？")  
+                   alert("我拒绝了他。 他的说服力不够。")  
+                   alert("但此后的每一天，我都注意到事情发生了变化。")  
+                   alert("我认识的每个人都开始改变他们的性格。")  
+                   alert("他们都变成了没有头脑的空壳，都变得像机器人一样。")  
+                   alert("之后，就是天气了。")  
+                   alert("每天都在下雨，整天都在下雨。 太阳根本就没有现身。")  
+                   alert("然后，它就是现实本身的结构。")  
+                   alert("事物开始向上坠落，随机传送，以及更多古怪的事件。")  
+                   alert("然后发生了一件伟大的事情……")  
                   }
                    player.yhvrcutscene11 = new Decimal(1)
             },
@@ -3170,16 +3170,16 @@ opacity: "0.9",
             {
                     if (player.yhvrcutscene12.eq(0))
                     {
-                   alert("It was me, all along. My three-dimensional world couldn't handle my eight-dimensional soul.")
-                   alert("I belonged in a greater world. One with an adaptable number of dimensions.")
-                   alert("I caused the end of my own dimension.")
-                   alert("It was just me. Nothing else. I had converted my world into one of higher dimensions, but nothing can be contained in it.")
-                   alert("Until a hyper-dimensional being of great power came up to me.")
-                   alert("It was not the same being as before. This one had a white glow. It took form of a cat of some sort.")
-                   alert("It told me a few things.")
-                   alert("My true name is Yhvr. It means 'God of infinite dimensions' in an ancient unknown language.")
-                   alert("I would one day inhibit an infinite amount of dimensions, and reach true infinity.")
-                   alert("And then I woke up and I found him. I was in Meta Studio. My leader was Flamemaster.")
+                   alert("一直都是我。 我的三维世界无法容纳我的八维灵魂。")
+                   alert("我属于一个更广阔的世界。 一种具有多种尺寸的适应性。")
+                   alert("我造成了我自己维度的终结。")
+                   alert("只有我一个人。 没有其他的。 我已经将我的世界转变为更高维度的世界，但其中无法容纳任何东西。")
+                   alert("直到一个拥有强大力量的超维度存在来到我身边。")
+                   alert("它和以前不一样了。 这一颗散发着白色的光芒。 它呈现出某种猫的形状。")
+                   alert("它告诉了我一些事情。")
+                   alert("我的真名是 Yhvr。 在一种古老的未知语言中，它的意思是“无限维度的上帝”。")
+                   alert("有一天我会抑制无限的维度，并达到真正的无限。")
+                   alert("然后我醒来，发现了他。 我在Meta Studio。 我的领导者是火焰大师。")
                   }
                    player.yhvrcutscene12 = new Decimal(1)
             },

@@ -304,12 +304,12 @@
                 player.m.dimensionalrealmtravels = player.m.dimensionalrealmtravels.sub(1)
                 if (player.yhvrcutscene8.eq(0))
                 {
-                alert("You are going to travel to the dimensional realm.")
-                alert("This is your first time out of base.")
-                alert("This realm is one level higher than the one we are in right now.")
-                alert("My creation, galaxy, is in this realm.")
-                alert("Once you find your predecessor, go to galaxy.")
-                alert("A lot of important things are there.")
+                alert("你将前往维度领域。")
+                alert("这是你第一次离开基地。")
+                alert("这个境界比我们现在所处的境界还要高一层。")
+                alert("我的创造物，银河系，就在这个领域。")
+                alert("一旦找到你的前任，就前往银河系。")
+                alert("那里有很多重要的事情。")
             }
                 player.yhvrcutscene8 = new Decimal(1)
             },
@@ -329,19 +329,19 @@
             onPurchase() {
                 if (player.yhvrcutscene1.eq(0))
                 {
-                alert("It's time to introduce myself.")
-                alert("My name is Yhvr. The ranger of numbers.")
-                alert("I am one of the four great nobles of incremental powers.")
-                alert("You will know it's me becasue I am communicating via alerts.")
-                alert("I am in exile, as are my other fellow nobles Jacorb and Aarex.")
-                alert("However, I can still communicate with the outside world.")
-                alert("My creation, galaxy.click is very useful as it lets me do this.")
-                alert("Please. Help us get out of here!")
-                alert("Jacorb and Aarex tried helping the other hero, but it was no use.")
-                alert("The path of singularity was too weak to handle a single celestial.")
-                alert("I want you to access galaxy.click, so you can be able to defeat celestials.")
-                alert("Not even true singularities are capable of this power.")
-                alert("Anyways, THE DEATH REALM will eventually catch on to this convo. Gotta go.")
+                alert("是时候自我介绍一下了。")
+                alert("我的名字是Yhvr。 数字游侠。")
+                alert("我是增量力四大贵族之一。")
+                alert("您会知道是我，因为我正在通过警报进行通信。")
+                alert("我和我的其他贵族同伴雅科布和亚雷克斯都被流放了。")
+                alert("不过，我还是可以和外界沟通的。")
+                alert("我的创作 Galaxy.click 非常有用，因为它可以让我做到这一点。")
+                alert("请。 帮助我们离开这里！")
+                alert("雅各布和亚雷克斯试图帮助另一位英雄，但没有用。")
+                alert("奇点之道太弱了，无法对付单个天体。")
+                alert("我希望你能够访问 Galaxy.click，这样你就能够击败天神。")
+                alert("即使是真正的奇点也没有这种力量。")
+                alert("不管怎样，死亡王国最终会抓住这个机会。 得走了。")
                 }
                 player.yhvrcutscene1 = new Decimal(1)
             },
@@ -413,11 +413,11 @@
             onPurchase() {
                 if (player.yhvrcutscene4.eq(0))
                 {
-                alert("Nice.")
-                alert("Now your incremental power gain will skyrocket.")
-                alert("Just remember.")
-                alert("You must keep going farther in the path, or else you won't unlock new factors.")
-                alert("Enjoy.")
+                alert("好的。")
+                alert("现在你的增量功率增益将会飙升。")
+                alert("只要记住。")
+                alert("你必须在这条路上走得更远，否则你将无法解锁新的因素。")
+                alert("享受。")
             }
                 player.yhvrcutscene4 = new Decimal(1)
             },
@@ -459,11 +459,11 @@
             onPurchase() {
                 if (player.yhvrcutscene6.eq(0))
                 {
-                alert("It's about time you unlocked this feature.")
-                alert("It is run by a unique celestial, but this feature will be very helpful.")
-                alert("You are close to the first celestial you will fight.")
-                alert("But to summon it, you must craft a certain item.")
-                alert("But there are requirements you will need to complete first.")
+                alert("是时候解锁此功能了。")
+                alert("它是由一个独特的天体运行的，但这个功能将非常有帮助。")
+                alert("你已经接近第一个要战斗的天体了。")
+                alert("但要召唤它，你必须制作某种物品。")
+                alert("但您需要首先完成一些要求。")
             }
                 player.yhvrcutscene6 = new Decimal(1)
             },
